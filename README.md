@@ -1,6 +1,13 @@
 # cool-bookmarklet-games
 some simple book market games that u can play on any site (unblocked in school)
 
+## games in this repo
+- island survival
+- parkour swing
+- spider swing
+- plane simulator
+- 2D munecraft
+
 
 # what you need to do:
 
