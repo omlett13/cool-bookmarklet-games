@@ -192,9 +192,11 @@ function drawScope(){
   const r=110;
 
   ctx.save();
-  ctx.fillStyle='rgba(0,0,0,0.65)';ctx.fillRect(0,0,W,H);
-  ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(sx,sy,r,0,Math.PI*2);ctx.fill();
-  ctx.globalCompositeOperation='source-over';
+  ctx.fillStyle='rgba(0,0,0,0.65)';
+  ctx.beginPath();
+  ctx.rect(0,0,W,H);
+  ctx.arc(sx,sy,r,0,Math.PI*2,true);
+  ctx.fill('evenodd');
   ctx.strokeStyle='rgba(255,255,255,0.9)';ctx.lineWidth=2;ctx.beginPath();ctx.arc(sx,sy,r,0,Math.PI*2);ctx.stroke();
 
   ctx.save();
